@@ -1,0 +1,299 @@
+// CARD BALANCE
+
+.card-balance {
+  background-color: map-get($theme-colors, "secondary");
+  color: map-get($theme-colors, "dark");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    color: map-get($theme-colors, "dark");
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__money {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 3px;
+    border: 1px solid map-get($theme-colors, "info");
+    border-radius: 15px;
+  }
+
+  &__description {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
+
+//CARD TRANSACTIONS
+
+.card-transactions {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  // CONTROL DE ANCHO
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #eee;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3436;
+    margin: 0;
+  }
+
+  &__body {
+    .table {
+      margin-bottom: 0;
+
+      // Estilo para las filas
+      tbody tr {
+        transition: transform 0.2s ease;
+        &:hover {
+          background-color: #f8f9fa;
+        }
+      }
+
+      td,
+      th {
+        padding: 12px 8px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+  }
+}
+
+.debit-card {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    color: map-get($theme-colors, "dark");
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__body {
+    background: #020024;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 0, 255, 1) 100%
+    );
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    width: 100%;
+  }
+
+  &__balance {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__title {
+      color: map-get($theme-colors, "info");
+      font-size: 12px;
+    }
+    &__amount {
+      color: map-get($theme-colors, "secondary");
+      font-size: 20px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &__title {
+      color: map-get($theme-colors, "info");
+      font-size: 12px;
+    }
+    &__name {
+      color: map-get($theme-colors, "secondary");
+      font-size: 20px;
+    }
+  }
+
+  &__serie {
+    display: flex;
+    justify-content: space-between;
+
+    &__number {
+      color: map-get($theme-colors, "secondary");
+      font-size: 20px;
+    }
+  }
+
+  &__circles_content {
+    position: relative;
+    right: 20px;
+  }
+
+  &__circles {
+    position: relative;
+    background-color: #eb001b;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      background-color: #f79e1b;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      opacity: 0.9;
+    }
+  }
+}
+
+.debit-card-white {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    color: #212529;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__body {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  &__balance {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__title {
+      color: #6c757d;
+      font-size: 12px;
+    }
+    &__amount {
+      color: #212529;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &__title {
+      color: #6c757d;
+      font-size: 12px;
+    }
+    &__name {
+      color: #212529;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  &__serie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__number {
+      color: #212529;
+      font-size: 20px;
+      font-family: monospace;
+    }
+  }
+
+  &__circles_content {
+    position: relative;
+    width: 50px;
+    height: 25px;
+  }
+
+  &__circles {
+    position: absolute;
+    right: 25px;
+    background-color: #eb001b;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      background-color: #f79e1b;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      opacity: 0.9;
+    }
+  }
+}

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="menu__body">
+    <!-- HEADER -->
+    <header class="nav mb-4">
+      <nav class="nav__wall">
+        <div class="nav__left">
+          <img
+            src="../images/wallet-nav.svg"
+            alt="Wallet logo"
+            height="20"
+            class="nav__left__image"
+          />
+          <ul class="nav__list">
+            <li class="nav__left__list__item active__link">
+              <a href="menu.html" style="text-decoration: none; color: inherit"
+                >Billetera</a
+              >
+            </li>
+            <li class="nav__left__list__item">
+              <a
+                href="transactions.html"
+                style="text-decoration: none; color: inherit"
+                >Historial</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <img src="../images/user.png" class="nav__icon__user" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <!--SUPERIOS-->
+      <section class="row g-4 align-items-stretch">
+        <!-- SALDO -->
+        <section class="card-balance">
+          <div class="card-balance__header">
+            <p class="card-balance__title">Mi saldo actual</p>
+            <p class="card-balance__money">$61.510 CLP</p>
+          </div>
+
+          <div class="card-balance__actions">
+            <p class="card-balance__description">Abonar mi cuenta</p>
+            <div class="input-group input-group-sm mb-3">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+              <span class="input-group-text" id="inputGroup-sizing-sm"
+                >Enviar</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- MOVIMIENTOS -->
+        <section class="card-transactions">
+          <div class="card-transactions__header">
+            <h3 class="card-transactions__title">Últimos movimientos</h3>
+            <a href="#" class="card-transactions__link">Ver todos</a>
+          </div>
+
+          <div class="card-transactions__body table-responsive">
+            <table class="table table-hover align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Movimiento</th>
+                  <th scope="col">Cuenta</th>
+                  <th scope="col">Monto</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row">1</th>
+                  <td class="fw-bold">Pago</td>
+                  <td>Enel</td>
+                  <td class="text-danger">-$21.500</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td class="fw-bold">Pago</td>
+                  <td>Movistar</td>
+                  <td class="text-danger">-$16.990</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td class="fw-bold">Deposito</td>
+                  <td>Transferencia</td>
+                  <td class="text-success">+$50.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <!--INFERIOS-->
+      <section class="row g-4 align-items-stretch mb-4">
+        <div class="col-12">
+          <h2>Mis Tarjetas</h2>
+        </div>
+        <!-- TARJETA DE CREDITO -->
+        <section class="debit-card col-12 col-md-6">
+          <h3 class="debit-card__title">tarjeta de credito</h3>
+          <section class="debit-card__body">
+            <div class="debit-card__balance">
+              <p class="debit-card__balance__title">Balance</p>
+              <p class="debit-card__balance__amount">$500.000</p>
+            </div>
+
+            <div class="debit-card__description">
+              <div>
+                <p class="debit-card__description__title">CARD HOLDER</p>
+                <p class="debit-card__description__name">Nombre Apellido</p>
+              </div>
+              <div>
+                <p class="debit-card__description__title">VALID THRU</p>
+                <p class="debit-card__description__name">12/28</p>
+              </div>
+            </div>
+            <div class="debit-card__serie">
+              <p class="debit-card__serie__number">0000 0000 0000 0000</p>
+              <div class="debit-card__circles_content">
+                <div class="debit-card__circles"></div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- TARJETA DE DEBITO -->
+        <section class="debit-card-white col-12 col-md-6">
+          <h3 class="debit-card-white__title">Tarjeta de Débito</h3>
+
+          <section class="debit-card-white__body">
+            <div class="debit-card-white__balance">
+              <p class="debit-card-white__balance__label">Balance</p>
+              <p class="debit-card-white__balance__amount">$500.000</p>
+            </div>
+
+            <div class="debit-card-white__description">
+              <div class="debit-card-white__description__group">
+                <p class="debit-card-white__description__label">CARD HOLDER</p>
+                <p class="debit-card-white__description__value">
+                  Nombre Apellido
+                </p>
+              </div>
+              <div class="debit-card-white__description__group">
+                <p class="debit-card-white__description__label">VALID THRU</p>
+                <p class="debit-card-white__description__value">12/27</p>
+              </div>
+            </div>
+
+            <div class="debit-card-white__serie">
+              <p class="debit-card-white__serie__number">0000 0000 0000 0000</p>
+              <div class="debit-card-white__circles_content">
+                <div class="debit-card-white__circles"></div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer">
+        <p>© 2026 E-Wallet todos los derechos resevados</p>
+      </section>
+    </footer>
+  </body>
+</html>

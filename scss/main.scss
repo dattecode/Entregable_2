@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*boostrap*/
+@import "./vendors/bootstrap";
+
+/*metodologia 7 en 1*/
+
+/* base*/
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/typography";
+
+/* components */
+@import "./components/cards";
+
+/*layout*/
+@import "./layout/header";
+@import "./layout/footer";
+
+/*pages*/
+@import "./pages/home";
+@import "./pages/contact";

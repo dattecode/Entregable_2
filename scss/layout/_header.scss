@@ -1,0 +1,48 @@
+.nav {
+  background-color: map-get($theme-colors, "primary");
+  color: map-get($theme-colors, "info");
+  padding: 10px;
+  list-style: none;
+
+  &__wall {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon__user{
+    width: 28px;
+    height: 28px;
+    background-color: map-get($theme-colors , "info");
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+}
+
+.active__link{
+  color: map-get($theme-colors, "secondary" );
+}
+

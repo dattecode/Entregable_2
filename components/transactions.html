@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body
+    class="d-flex flex-column min-vh-100 menu__body d-flex flex-column justify-content-between"
+  >
+    <!--HEADER-->
+    <header class="nav mb-4">
+      <nav class="nav__wall">
+        <div class="nav__left">
+          <img
+            src="../images/wallet-nav.svg"
+            alt="Wallet logo"
+            height="20"
+            class="nav__left__image"
+          />
+          <ul class="nav__list">
+            <li class="nav__left__list__item">
+              <a href="menu.html" style="text-decoration: none; color: inherit"
+                >Billetera</a
+              >
+            </li>
+            <li class="nav__left__list__item active__link">
+              <a
+                href="transactions.html"
+                style="text-decoration: none; color: inherit"
+                >Historial</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <img src="../images/user.png" class="nav__icon__user" />
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="container">
+      <section class="history">
+        <div>
+          <h2>Historial De Movimientos</h2>
+        </div>
+        <div class="card-transactions__body table-responsive">
+            <table class="table table-hover align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Movimiento</th>
+                  <th scope="col">Cuenta</th>
+                  <th scope="col">Monto</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row">1</th>
+                  <td class="fw-bold">Pago</td>
+                  <td>Enel</td>
+                  <td class="text-danger">-$21.500</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td class="fw-bold">Pago</td>
+                  <td>Movistar</td>
+                  <td class="text-danger">-$16.990</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td class="fw-bold">Deposito</td>
+                  <td>Transferencia</td>
+                  <td class="text-success">+$50.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="history__pagination">
+          <button class="history__pagination__btn">Anterior</button>
+          <button class="history__pagination__active">1</button>
+          <button class="history__pagination__btn">Siguiente</button>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+
+      <footer>
+        <section class="footer">
+          <p>© 2026 E-Wallet todos los derechos resevados</p>
+        </section>
+      </footer>
+
+  </body>
+</html>
