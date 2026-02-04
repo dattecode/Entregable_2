@@ -10,7 +10,7 @@
 ### eliminacion de la seccion mis cuentas por no tener logica para el proyecto
 
 ---
-el peoyecto se encuentra en la carpeta entregable_2 con el fin de estilizarlo con las siguientes tecnologias:
+el proyecto se encuentra en la carpeta entregable_2 con el fin de estilizarlo con las siguientes tecnologias:
 
 JavaScript y Jquery:
 usado para el login del proyecto.
