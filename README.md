@@ -21,5 +21,5 @@ para estilizar el proyecto.
 ---
 
 llaves de acceso:
-rut = "12345678-9"
-password = "123456"
+rut = 12345678-9
+password = 123456

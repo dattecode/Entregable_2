@@ -12180,6 +12180,9 @@ textarea.form-control-lg {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .history {
