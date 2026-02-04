@@ -17,3 +17,9 @@ usado para el login del proyecto.
 
 scss boostrap y estructura 7-1:
 para estilizar el proyecto.
+
+---
+
+llaves de acceso:
+rut = "12345678-9"
+password = "123456"
